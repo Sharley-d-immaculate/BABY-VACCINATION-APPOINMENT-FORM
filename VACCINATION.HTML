@@ -5,44 +5,51 @@
 
     <style>
         body {
-            background-color: #e6f2ff; /* light blue */
+            background-color: #e6f2ff;
             font-family: Arial, sans-serif;
         }
 
         .container {
-            width: 400px;
+            width: 380px;
             margin: 40px auto;
             padding: 20px;
             background-color: white;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            box-shadow: 0 0 10px rgba(0,0,0,0.15);
         }
 
         h2 {
             text-align: center;
             color: #0066cc;
+            margin-bottom: 15px;
         }
 
         label {
             color: #004080;
             font-weight: bold;
+            display: block;
+            margin-top: 10px;
+            font-size: 14px;
         }
 
         input, select {
             width: 100%;
-            padding: 10px;
-            margin: 10px 0;
+            padding: 6px;
+            margin-top: 5px;
             border-radius: 5px;
             border: 1px solid #3399ff;
+            font-size: 14px;
         }
 
         button {
             width: 100%;
-            padding: 12px;
+            padding: 8px;
+            margin-top: 15px;
             background-color: #0073e6;
             color: white;
             border: none;
             border-radius: 5px;
+            font-size: 15px;
             cursor: pointer;
         }
 
@@ -64,15 +71,15 @@
         <input type="text" placeholder="Enter baby name" required>
 
         <!-- Parent Name -->
-        <label>Father/Mother Name</label>
+        <label>Father / Mother Name</label>
         <input type="text" placeholder="Enter parent name" required>
 
-        <!-- DOB -->
+        <!-- Date of Birth -->
         <label>Date of Birth</label>
         <input type="date" required>
 
         <!-- Age -->
-        <label>Baby Age</label>
+        <label>Baby's Age in Weeks</label>
         <select required>
             <option value="">Select Age</option>
             <option>At Birth</option>
@@ -82,37 +89,29 @@
             <option>9 Months (After 270 days)</option>
         </select>
 
-        <!-- Vaccine -->
-        <label>Select Vaccine</label>
+        <!-- Vaccination -->
+        <label>Select Vaccination</label>
         <select required>
             <option value="">Select Vaccine</option>
 
-            <!-- At Birth -->
             <option>BCG</option>
-            <option>OPV Zero dose</option>
-            <option>Hep B birth dose (within 24 hours)</option>
+            <option>Hep B</option>
 
-            <!-- 6 Weeks -->
             <option>Penta-1</option>
             <option>OPV-1</option>
             <option>Rota-1</option>
 
-            <!-- 10 Weeks -->
             <option>Penta-2</option>
             <option>OPV-2</option>
             <option>Rota-2</option>
 
-            <!-- 14 Weeks -->
-            <option>14th week</option>
             <option>Penta-3</option>
             <option>OPV-3</option>
             <option>IPV-2</option>
             <option>Rota-3</option>
 
-            <!-- 9 Months -->
             <option>MR 1st dose</option>
             <option>JE 1</option>
-
         </select>
 
         <!-- Submit -->
